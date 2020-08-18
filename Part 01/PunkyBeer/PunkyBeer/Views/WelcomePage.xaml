@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PunkyBeer.Views.WelcomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="http://prismlibrary.com"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    BackgroundColor="AntiqueWhite">
+    <StackLayout>
+        <Label
+            FontSize="20"
+            HorizontalOptions="CenterAndExpand"
+            Text="Welcome to Punky Beer"
+            VerticalOptions="CenterAndExpand" />
+        <Button
+            Margin="12,0,12,20"
+            Command="{Binding ContinueCommand}"
+            Text="Continue"
+            VerticalOptions="EndAndExpand" />
+    </StackLayout>
+</ContentPage>
