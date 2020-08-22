@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PunkyBeer.Views.WelcomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="http://prismlibrary.com"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    BackgroundColor="AntiqueWhite">
+    <StackLayout Padding="12,70,12,20">
+        <Label
+            FontSize="22"
+            HorizontalOptions="CenterAndExpand"
+            Text="Welcome to Punky Beer" />
+        <Label
+            Padding="0,120,0,0"
+            FontSize="18"
+            Text="How would you like us to call you?" />
+        <Entry
+            Margin="20,16,20,0"
+            FontSize="18"
+            Placeholder="Your name"
+            Text="{Binding UserName}" />
+        <Button
+            Command="{Binding ContinueCommand}"
+            Text="Continue"
+            VerticalOptions="EndAndExpand" />
+    </StackLayout>
+</ContentPage>
