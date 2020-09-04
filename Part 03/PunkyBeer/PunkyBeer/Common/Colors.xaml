@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PunkyBeer.Common.Colors">
+    <Color x:Key="Paco">#4C1A11</Color>
+    <Color x:Key="Karry">#FFE7D2</Color>
+    <Color x:Key="BurningOrange">#FF7A3D</Color>
+    <Color x:Key="IndianKhaki">#C7AE90</Color>
+    <Color x:Key="FieryOrange">#C04C13</Color>
+</ResourceDictionary>
+

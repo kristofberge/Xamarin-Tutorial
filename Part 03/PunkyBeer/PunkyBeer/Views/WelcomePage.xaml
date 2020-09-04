@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PunkyBeer.Views.WelcomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="http://prismlibrary.com"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="{StaticResource Paco}"
+    NavigationPage.HasNavigationBar="False">
+
+    <StackLayout Padding="12,70,12,20">
+        <Label
+            TextColor="{StaticResource Karry}"
+            FontSize="22"
+            HorizontalOptions="CenterAndExpand"
+            Text="Welcome to Punky Beer" />
+        <Label
+            TextColor="{StaticResource Karry}"
+            Padding="20,120,0,0"
+            FontSize="18"
+            Text="How would you like us to call you?" />
+        <Entry
+            BackgroundColor="{StaticResource Karry}"
+            TextColor="{StaticResource FieryOrange}"
+            PlaceholderColor="{StaticResource IndianKhaki}"
+            Margin="20,16,20,0"
+            FontSize="18"
+            Placeholder="Your name"
+            Text="{Binding UserName}" />
+        <Button
+            BackgroundColor="{StaticResource FieryOrange}"
+            TextColor="{StaticResource Karry}"
+            Command="{Binding ContinueCommand}"
+            Text="Continue"
+            FontSize="20"
+            VerticalOptions="EndAndExpand" />
+    </StackLayout>
+</ContentPage>
